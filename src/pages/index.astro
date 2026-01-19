@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import B3e0d from '../components/widgets/B3e0d.tsx';
+import C4ce0 from '../components/widgets/C4ce0.tsx';
+import Eda66a from '../components/widgets/Eda66a.tsx';
+import Dd013 from '../components/widgets/Dd013.tsx';
+import F747d97 from '../components/widgets/F747d97.tsx';
+import O7d80 from '../components/widgets/O7d80.tsx';
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sellyourstufftoday.bid/#website",
+      "url": "https://sellyourstufftoday.bid",
+      "name": "business site",
+      "description": "A site that deals with information about businesses",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sellyourstufftoday.bid/#organization",
+      "name": "business site",
+      "url": "https://sellyourstufftoday.bid",
+      "description": "A site that deals with information about businesses"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sellyourstufftoday.bid#webpage",
+      "url": "https://sellyourstufftoday.bid",
+      "name": "Business Information Hub | Business Site",
+      "description": "Discover comprehensive business information on Business Site. Explore insights, trends, and resources to grow your business effectively today.",
+      "isPartOf": {
+        "@id": "https://sellyourstufftoday.bid/#website"
+      },
+      "about": {
+        "@id": "https://sellyourstufftoday.bid/#organization"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+};
+
+---
+
+<Layout
+  
+  title="Business Information Hub | Business Site"
+  description="Discover comprehensive business information on Business Site. Explore insights, trends, and resources to grow your business effectively today."
+  keywords={["business information", "business insights", "industry trends", "business resources"]}
+  ogTitle="Business Site - Business Information Hub"
+  ogDescription="Dive into the world of business with expert insights and resources. Stay informed and ahead in your industry."
+  ogImage="https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/32f43961-5b4a-4c58-7ece-0511dc780200/public"
+  canonical="https://sellyourstufftoday.bid/"
+  schema={schemaData}
+>
+  <B3e0d client:load currentPath="/" activeLinkStyle="background" transition:persist="nav" />
+  <C4ce0 client:load />
+  <Eda66a client:load />
+  <Dd013 client:load />
+  <F747d97 client:load />
+  <O7d80 client:load transition:persist="footer" />
+</Layout>

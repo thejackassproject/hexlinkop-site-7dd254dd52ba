@@ -1,0 +1,99 @@
+---
+// Enable SSR for this route
+export const prerender = false;
+
+import { createSupabaseClient } from '../../lib/supabase';
+import { extractFrontmatter, parseMarkdown } from '../../lib/markdown';
+import Layout from '../../layouts/Layout.astro';
+import B3e0d from '../../components/widgets/B3e0d.tsx';
+import O7d80 from '../../components/widgets/O7d80.tsx';
+
+const { slug } = Astro.params;
+
+// DEBUG: Log request context
+console.log('[Article Route] Requested slug:', slug);
+console.log('[Article Route] Astro.locals available:', !!Astro.locals);
+console.log('[Article Route] Astro.locals.runtime available:', !!Astro.locals.runtime);
+
+// Create Supabase client with Cloudflare runtime environment
+const supabase = createSupabaseClient(Astro.locals.runtime);
+
+// Fetch article from Supabase database
+console.log('[Article Route] Fetching article from database...');
+const { data: article, error } = await supabase
+  .from('hexlink_blog_posts')
+  .select('*')
+  .eq('slug', slug)
+  .eq('status', 'published')
+  .single();
+
+if (error || !article) {
+  console.error('[Article Route] Error fetching article:', error?.message || 'Article not found');
+  return Astro.redirect('/404');
+}
+
+console.log('[Article Route] Article fetched successfully:', article.title);
+
+// Extract frontmatter and content from stored MDX
+const { frontmatter, content } = extractFrontmatter(article.content_markdown);
+
+// Parse markdown to HTML
+const htmlContent = parseMarkdown(content);
+
+// Use database values, fallback to frontmatter
+const data = {
+  title: article.title || frontmatter.title,
+  excerpt: article.excerpt || frontmatter.excerpt,
+  coverImage: article.cover_image_path || frontmatter.coverImage,
+  date: new Date(article.published_at || frontmatter.date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  author: {
+    name: article.author_name || frontmatter.author?.name,
+    role: article.author_role || frontmatter.author?.role,
+    avatar: article.author_avatar_path || frontmatter.author?.avatar,
+  },
+  readTime: `${article.reading_time_minutes || 5} min read`,
+  category: frontmatter.category || 'Article',
+};
+---
+
+<Layout 
+  title={data.title} 
+  description={data.excerpt}
+  ogImage={data.coverImage}
+  ogTitle={data.title}
+  ogDescription={data.excerpt}
+>
+  <B3e0d client:load currentPath="/report" transition:persist="nav" />
+  
+  <article class="container mx-auto px-4 py-8 max-w-4xl">
+    <header class="mb-8 text-center">
+      {data.coverImage && (
+        <img 
+          src={data.coverImage} 
+          alt={data.title} 
+          class="w-full h-96 object-cover rounded-lg mb-6"
+        />
+      )}
+      <h1 class="text-4xl font-bold mb-4">{data.title}</h1>
+      <p class="text-lg text-muted-foreground mb-4">{data.excerpt}</p>
+      <div class="flex items-center justify-center gap-4 text-sm text-muted-foreground">
+        {data.author.name && <span>By {data.author.name}</span>}
+        {data.date && <span>{data.date}</span>}
+        {data.readTime && <span>{data.readTime}</span>}
+        {data.category && (
+          <span class="px-3 py-1 bg-primary/10 text-primary rounded-full">
+            {data.category}
+          </span>
+        )}
+      </div>
+    </header>
+    
+    <div class="prose prose-lg dark:prose-invert mx-auto" set:html={htmlContent} />
+  </article>
+  
+  <O7d80 client:load transition:persist="footer" />
+</Layout>

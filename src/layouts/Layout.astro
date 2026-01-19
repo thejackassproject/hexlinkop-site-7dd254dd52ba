@@ -1,0 +1,133 @@
+---
+import '../styles/globals.css';
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string[];
+  ogImage?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  canonical?: string;
+  schema?: any;
+  robots?: string;
+}
+
+const { 
+  title = "business site",
+  description = "business site",
+  keywords = [],
+  ogImage = "",
+  ogTitle = "",
+  ogDescription = "",
+  canonical = "",
+  schema = null,
+  robots = "index, follow"
+} = Astro.props;
+
+// Get current URL for og:url
+const currentUrl = new URL(Astro.url.pathname, Astro.site || 'https://example.com');
+const fullCanonicalUrl = canonical || currentUrl.href;
+// OG image is already an absolute URL from SEO generation, or fallback to favicon
+const fullOgImageUrl = ogImage || new URL('/favicon.svg', Astro.site || 'https://example.com').href;
+const keywordsString = keywords && keywords.length > 0 ? keywords.join(', ') : '';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    {keywordsString && <meta name="keywords" content={keywordsString} />}
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={fullCanonicalUrl} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={currentUrl.href} />
+    <meta property="og:title" content={ogTitle || title} />
+    <meta property="og:description" content={ogDescription || description} />
+    <meta property="og:image" content={fullOgImageUrl} />
+    <meta property="og:site_name" content="business site" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={currentUrl.href} />
+    <meta name="twitter:title" content={ogTitle || title} />
+    <meta name="twitter:description" content={ogDescription || description} />
+    <meta name="twitter:image" content={fullOgImageUrl} />
+    
+    <!-- Favicons for all devices -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <meta name="generator" content="WordPress 6.3.1" />
+    
+    <!-- Schema.org Structured Data -->
+    {schema && (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    )}
+    
+    <script is:inline>
+      // Restore dark mode immediately (before hydration/paint)
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+    
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+    
+    <script is:inline>
+      // Dark mode initialization
+      (function() {
+        const getTheme = () => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+        };
+      
+        const theme = getTheme();
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      window.localStorage.setItem('theme', theme);
+      })();
+      
+      // Persist dark mode across transitions
+      document.addEventListener('page:beforeswap', (e) => {
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+          e.newDocument.documentElement.classList.add('dark');
+        }
+      });
+      
+      // Reapply dark mode after page load
+      document.addEventListener('page:load', () => {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      });
+    </script>
+  </body>
+</html>

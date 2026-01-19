@@ -1,0 +1,145 @@
+---
+// Enable SSR for blog listing page
+export const prerender = false;
+
+import { createSupabaseClient } from '../lib/supabase';
+import Layout from '../layouts/Layout.astro';
+import B3e0d from '../components/widgets/B3e0d.tsx';
+import O7d80 from '../components/widgets/O7d80.tsx';
+import E3bb1 from "../components/widgets/E3bb1.tsx";
+import Oadd0 from "../components/widgets/Oadd0.tsx";
+import C3446c from "../components/widgets/C3446c.tsx";
+
+// Get pagination and search params
+const url = new URL(Astro.request.url);
+const page = parseInt(url.searchParams.get('page') || '1');
+const searchQuery = url.searchParams.get('search') || '';
+const perPage = 12;
+
+// Create Supabase client with Cloudflare runtime
+console.log('[Blog Listing] Fetching articles from database...');
+const supabase = createSupabaseClient(Astro.locals.runtime);
+
+// Build query
+let query = supabase
+  .from('hexlink_blog_posts')
+  .select('*', { count: 'exact' })
+  .eq('status', 'published')
+  .order('published_at', { ascending: false });
+
+// Apply search filter if provided
+if (searchQuery) {
+  query = query.or(`title.ilike.%${searchQuery}%,excerpt.ilike.%${searchQuery}%,content_markdown.ilike.%${searchQuery}%`);
+}
+
+// Apply pagination
+const from = (page - 1) * perPage;
+const to = from + perPage - 1;
+query = query.range(from, to);
+
+const { data: articles, error, count } = await query;
+
+if (error) {
+  console.error('[Blog Listing] Error fetching articles:', error);
+}
+
+console.log('[Blog Listing] Found', count || 0, 'total articles');
+
+// Format articles for display
+const formattedArticles = (articles || []).map(article => ({
+  slug: `/report/${article.slug}`,
+  title: article.title,
+  excerpt: article.excerpt,
+  coverImage: article.cover_image_path,
+  author: {
+    name: article.author_name,
+    role: article.author_role,
+    avatar: article.author_avatar_path,
+  },
+  date: new Date(article.published_at).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  category: article.category || 'Article',
+  readTime: `${article.reading_time_minutes || 5} min read`,
+})));
+
+// Calculate pagination
+const totalPages = Math.ceil((count || 0) / perPage);
+const hasPrevPage = page > 1;
+const hasNextPage = page < totalPages;
+---
+
+<Layout 
+  title="Articles"
+  description="Browse our latest articles and insights"
+>
+  <B3e0d client:load currentPath="/report" transition:persist="nav" />
+  
+  {/* Hero Section */}
+  <E3bb1 client:load />
+  
+  {/* Featured Articles Section */}
+  <Oadd0 client:load articles={formattedArticles} />
+  
+  {/* Search Bar */}
+  <div class="container mx-auto px-4 py-8">
+    <form method="GET" class="max-w-2xl mx-auto mb-12">
+      <div class="flex gap-2">
+        <input
+          type="text"
+          name="search"
+          value={searchQuery}
+          placeholder="Search articles..."
+          class="flex-1 px-4 py-2 border rounded-lg"
+        />
+        <button type="submit" class="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90">
+          Search
+        </button>
+      </div>
+    </form>
+    
+    {/* Results Info */}
+    <div class="text-center mb-8">
+      <p class="text-muted-foreground">
+        {searchQuery ? `Found ${count || 0} articles matching "${searchQuery}"` : `${count || 0} articles`}
+      </p>
+    </div>
+    
+    {/* Articles Grid */}
+    <C3446c client:load articles={formattedArticles} />
+    
+    {/* No Results */}
+    {!formattedArticles.length && (
+      <div class="text-center py-12">
+        <p class="text-lg text-muted-foreground">No articles found.</p>
+      </div>
+    )}
+    
+    {/* Pagination */}
+    {totalPages > 1 && (
+      <div class="flex justify-center items-center gap-4 mt-12">
+        {hasPrevPage && (
+          <a href={`?page=${page - 1}${searchQuery ? `&search=${searchQuery}` : ''}`}
+             class="px-4 py-2 bg-secondary rounded-lg hover:bg-secondary/80">
+            Previous
+          </a>
+        )}
+        
+        <span class="text-muted-foreground">
+          Page {page} of {totalPages}
+        </span>
+        
+        {hasNextPage && (
+          <a href={`?page=${page + 1}${searchQuery ? `&search=${searchQuery}` : ''}`}
+             class="px-4 py-2 bg-secondary rounded-lg hover:bg-secondary/80">
+            Next
+          </a>
+        )}
+      </div>
+    )}
+  </div>
+  
+  <O7d80 client:load transition:persist="footer" />
+</Layout>

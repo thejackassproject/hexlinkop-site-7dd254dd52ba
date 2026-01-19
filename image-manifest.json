@@ -1,0 +1,515 @@
+{
+  "generated_at": "2026-01-19T00:32:49.690666",
+  "site_id": "site-7dd254dd52ba",
+  "cloudflare_enabled": true,
+  "images": {
+    "pages": [
+      {
+        "id": "a88c3c79-08a6-4f91-5f40-36ce38fc9e00",
+        "filename": "business-handshake.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/a88c3c79-08a6-4f91-5f40-36ce38fc9e00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:42.022947",
+        "metadata": {
+          "alt": "Business Professionals Sealing a Deal - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:hero-bg",
+          "block": "Hero01",
+          "type": "hero-bg",
+          "folder": "pages",
+          "filename": "business-handshake.jpg"
+        }
+      },
+      {
+        "id": "f1e37552-63f7-43ba-3932-a38148211e00",
+        "filename": "market-intelligence.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/f1e37552-63f7-43ba-3932-a38148211e00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:40.619684",
+        "metadata": {
+          "alt": "Market Intelligence - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-0",
+          "block": "BentoGrid01",
+          "type": "bento-0",
+          "folder": "pages",
+          "filename": "market-intelligence.jpg"
+        }
+      },
+      {
+        "id": "6fefd6ec-3c53-4992-d9aa-a08271e17600",
+        "filename": "financial-analytics.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/6fefd6ec-3c53-4992-d9aa-a08271e17600/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:40.816291",
+        "metadata": {
+          "alt": "Financial Analytics - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-1",
+          "block": "BentoGrid01",
+          "type": "bento-1",
+          "folder": "pages",
+          "filename": "financial-analytics.jpg"
+        }
+      },
+      {
+        "id": "a0eb6dc7-38a5-476a-2176-2f353e783e00",
+        "filename": "operational-efficiency.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/a0eb6dc7-38a5-476a-2176-2f353e783e00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:41.771893",
+        "metadata": {
+          "alt": "Operational Efficiency - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-2",
+          "block": "BentoGrid01",
+          "type": "bento-2",
+          "folder": "pages",
+          "filename": "operational-efficiency.jpg"
+        }
+      },
+      {
+        "id": "32f43961-5b4a-4c58-7ece-0511dc780200",
+        "filename": "strategic-partnerships.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/32f43961-5b4a-4c58-7ece-0511dc780200/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:41.308089",
+        "metadata": {
+          "alt": "Strategic Partnerships - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-3",
+          "block": "BentoGrid01",
+          "type": "bento-3",
+          "folder": "pages",
+          "filename": "strategic-partnerships.jpg"
+        }
+      },
+      {
+        "id": "1e9c0def-8eca-4bfd-f49f-f142348eb500",
+        "filename": "city-skyline-reflection.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/1e9c0def-8eca-4bfd-f49f-f142348eb500/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:50.776478",
+        "metadata": {
+          "alt": "Business District at Sunset with Skyscraper Reflections - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:header-bg",
+          "block": "Header01",
+          "type": "header-bg",
+          "folder": "pages",
+          "filename": "city-skyline-reflection.jpg"
+        }
+      },
+      {
+        "id": "c401741a-d47a-4536-c625-92cbd3ede600",
+        "filename": "our-core-mission.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/c401741a-d47a-4536-c625-92cbd3ede600/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:48.376169",
+        "metadata": {
+          "alt": "Our Core Mission - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-0",
+          "block": "BentoGrid02",
+          "type": "bento-0",
+          "folder": "pages",
+          "filename": "our-core-mission.jpg"
+        }
+      },
+      {
+        "id": "c7b252ba-b573-4f55-0770-da37dc03f600",
+        "filename": "our-business-journey.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/c7b252ba-b573-4f55-0770-da37dc03f600/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:47.300964",
+        "metadata": {
+          "alt": "Our Business Journey - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-1",
+          "block": "BentoGrid02",
+          "type": "bento-1",
+          "folder": "pages",
+          "filename": "our-business-journey.jpg"
+        }
+      },
+      {
+        "id": "9ca62476-dcf0-4322-aeaa-eeb7cb365600",
+        "filename": "meet-our-experts.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/9ca62476-dcf0-4322-aeaa-eeb7cb365600/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:48.492443",
+        "metadata": {
+          "alt": "Meet Our Experts - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-2",
+          "block": "BentoGrid02",
+          "type": "bento-2",
+          "folder": "pages",
+          "filename": "meet-our-experts.jpg"
+        }
+      },
+      {
+        "id": "3e77db4b-4ca4-4565-11ef-02dacff69d00",
+        "filename": "comprehensive-resources.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/3e77db4b-4ca4-4565-11ef-02dacff69d00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:48.042982",
+        "metadata": {
+          "alt": "Comprehensive Resources - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-3",
+          "block": "BentoGrid02",
+          "type": "bento-3",
+          "folder": "pages",
+          "filename": "comprehensive-resources.jpg"
+        }
+      },
+      {
+        "id": "3ea7d525-735e-41cd-e034-0733211bf800",
+        "filename": "join-our-community.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/3ea7d525-735e-41cd-e034-0733211bf800/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:48.152303",
+        "metadata": {
+          "alt": "Join Our Community - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:bento-4",
+          "block": "BentoGrid02",
+          "type": "bento-4",
+          "folder": "pages",
+          "filename": "join-our-community.jpg"
+        }
+      },
+      {
+        "id": "4a742109-b544-46df-91b7-c6b372b4bd00",
+        "filename": "businesswoman-office-focus.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/4a742109-b544-46df-91b7-c6b372b4bd00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:52.904587",
+        "metadata": {
+          "alt": "Focused Businesswoman in Modern Office - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:background",
+          "block": "Cta02",
+          "type": "background",
+          "folder": "pages",
+          "filename": "businesswoman-office-focus.jpg"
+        }
+      },
+      {
+        "id": "76f2fe73-228b-4486-7a9a-8c8508b16700",
+        "filename": "essential-business-strategies-for-2023.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/76f2fe73-228b-4486-7a9a-8c8508b16700/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:01.079112",
+        "metadata": {
+          "alt": "Essential Business Strategies for 2023 - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:gallery-0",
+          "block": "BlogFeatured01",
+          "type": "gallery-0",
+          "folder": "pages",
+          "filename": "essential-business-strategies-for-2023.jpg"
+        }
+      },
+      {
+        "id": "d47a2eba-e1e6-432e-970b-c0bc11c03a00",
+        "filename": "2023-market-analysis-report.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/d47a2eba-e1e6-432e-970b-c0bc11c03a00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:07.191735",
+        "metadata": {
+          "alt": "2023 Market Analysis Report - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:gallery-1",
+          "block": "BlogFeatured01",
+          "type": "gallery-1",
+          "folder": "pages",
+          "filename": "2023-market-analysis-report.jpg"
+        }
+      },
+      {
+        "id": "1de8dbca-c0a4-471b-786f-888b20900300",
+        "filename": "digital-transformation-a-complete-guide.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/1de8dbca-c0a4-471b-786f-888b20900300/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:01.796552",
+        "metadata": {
+          "alt": "Digital Transformation: A Complete Guide - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:gallery-2",
+          "block": "BlogFeatured01",
+          "type": "gallery-2",
+          "folder": "pages",
+          "filename": "digital-transformation-a-complete-guide.jpg"
+        }
+      },
+      {
+        "id": "dd52aa96-6092-467b-45fd-ed92a5087300",
+        "filename": "financial-planning-tips-for-businesses.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/dd52aa96-6092-467b-45fd-ed92a5087300/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:00.518775",
+        "metadata": {
+          "alt": "Financial Planning Tips for Businesses - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:gallery-3",
+          "block": "BlogFeatured01",
+          "type": "gallery-3",
+          "folder": "pages",
+          "filename": "financial-planning-tips-for-businesses.jpg"
+        }
+      },
+      {
+        "id": "3a72cc24-ea5c-4ef8-817f-a86481ead700",
+        "filename": "leadership-insights-building-strong-teams.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/3a72cc24-ea5c-4ef8-817f-a86481ead700/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:59.889115",
+        "metadata": {
+          "alt": "Leadership Insights: Building Strong Teams - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:gallery-4",
+          "block": "BlogFeatured01",
+          "type": "gallery-4",
+          "folder": "pages",
+          "filename": "leadership-insights-building-strong-teams.jpg"
+        }
+      },
+      {
+        "id": "3b1ce2d7-d4c8-4db7-5689-cd35768f4100",
+        "filename": "sustainability-in-the-corporate-world.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/3b1ce2d7-d4c8-4db7-5689-cd35768f4100/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:59.297784",
+        "metadata": {
+          "alt": "Sustainability in the Corporate World - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:gallery-5",
+          "block": "BlogFeatured01",
+          "type": "gallery-5",
+          "folder": "pages",
+          "filename": "sustainability-in-the-corporate-world.jpg"
+        }
+      },
+      {
+        "id": "9134479d-ccc3-4124-1d84-94ea59ce2800",
+        "filename": "strategies-for-sustainable-business-growth.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/9134479d-ccc3-4124-1d84-94ea59ce2800/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:06.309580",
+        "metadata": {
+          "alt": "Strategies for Sustainable Business Growth - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:blog-0",
+          "block": "BlogGrid01",
+          "type": "blog-0",
+          "folder": "pages",
+          "filename": "strategies-for-sustainable-business-growth.jpg"
+        }
+      },
+      {
+        "id": "7a23afbe-fa6c-46d0-a128-5cc1a4222d00",
+        "filename": "strategies-for-sustainable-business-growth.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/7a23afbe-fa6c-46d0-a128-5cc1a4222d00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:59.505797",
+        "metadata": {
+          "alt": "Strategies for Sustainable Business Growth - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:avatar-0",
+          "block": "BlogGrid01",
+          "type": "avatar-0",
+          "folder": "pages",
+          "filename": "strategies-for-sustainable-business-growth.jpg"
+        }
+      },
+      {
+        "id": "3c963433-9caf-4166-45b9-755c024c3b00",
+        "filename": "financial-planning-essentials-for-entrepreneurs.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/3c963433-9caf-4166-45b9-755c024c3b00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:00.321717",
+        "metadata": {
+          "alt": "Financial Planning Essentials for Entrepreneurs - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:blog-1",
+          "block": "BlogGrid01",
+          "type": "blog-1",
+          "folder": "pages",
+          "filename": "financial-planning-essentials-for-entrepreneurs.jpg"
+        }
+      },
+      {
+        "id": "11f99460-edf3-4a36-e445-562c58c16400",
+        "filename": "financial-planning-essentials-for-entrepreneurs.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/11f99460-edf3-4a36-e445-562c58c16400/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:59.519456",
+        "metadata": {
+          "alt": "Financial Planning Essentials for Entrepreneurs - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:avatar-1",
+          "block": "BlogGrid01",
+          "type": "avatar-1",
+          "folder": "pages",
+          "filename": "financial-planning-essentials-for-entrepreneurs.jpg"
+        }
+      },
+      {
+        "id": "08d825a1-751a-431e-fe45-0e59c289ee00",
+        "filename": "navigating-digital-transformation-in-business.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/08d825a1-751a-431e-fe45-0e59c289ee00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:01.999171",
+        "metadata": {
+          "alt": "Navigating Digital Transformation in Business - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:blog-2",
+          "block": "BlogGrid01",
+          "type": "blog-2",
+          "folder": "pages",
+          "filename": "navigating-digital-transformation-in-business.jpg"
+        }
+      },
+      {
+        "id": "d2c646d0-c49c-4c40-00af-4db3093f1800",
+        "filename": "navigating-digital-transformation-in-business.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/d2c646d0-c49c-4c40-00af-4db3093f1800/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:06.852127",
+        "metadata": {
+          "alt": "Navigating Digital Transformation in Business - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:avatar-2",
+          "block": "BlogGrid01",
+          "type": "avatar-2",
+          "folder": "pages",
+          "filename": "navigating-digital-transformation-in-business.jpg"
+        }
+      },
+      {
+        "id": "f294fa90-9488-43b9-c3f2-ca4bcca58e00",
+        "filename": "developing-leadership-skills-for-business-success.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/f294fa90-9488-43b9-c3f2-ca4bcca58e00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:57.816803",
+        "metadata": {
+          "alt": "Developing Leadership Skills for Business Success - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:blog-3",
+          "block": "BlogGrid01",
+          "type": "blog-3",
+          "folder": "pages",
+          "filename": "developing-leadership-skills-for-business-success.jpg"
+        }
+      },
+      {
+        "id": "c19d9854-18fa-4068-f9c8-029e803c5600",
+        "filename": "developing-leadership-skills-for-business-success.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/c19d9854-18fa-4068-f9c8-029e803c5600/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:59.237714",
+        "metadata": {
+          "alt": "Developing Leadership Skills for Business Success - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:avatar-3",
+          "block": "BlogGrid01",
+          "type": "avatar-3",
+          "folder": "pages",
+          "filename": "developing-leadership-skills-for-business-success.jpg"
+        }
+      },
+      {
+        "id": "8958afc4-d766-4885-0c2b-9ee744b21300",
+        "filename": "best-practices-in-market-research.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/8958afc4-d766-4885-0c2b-9ee744b21300/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:59.581870",
+        "metadata": {
+          "alt": "Best Practices in Market Research - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:blog-4",
+          "block": "BlogGrid01",
+          "type": "blog-4",
+          "folder": "pages",
+          "filename": "best-practices-in-market-research.jpg"
+        }
+      },
+      {
+        "id": "fab9d6d8-0473-41d5-296b-ffd2429baa00",
+        "filename": "best-practices-in-market-research.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/fab9d6d8-0473-41d5-296b-ffd2429baa00/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:59.523609",
+        "metadata": {
+          "alt": "Best Practices in Market Research - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:avatar-4",
+          "block": "BlogGrid01",
+          "type": "avatar-4",
+          "folder": "pages",
+          "filename": "best-practices-in-market-research.jpg"
+        }
+      },
+      {
+        "id": "14cc988e-cb2a-4766-70ec-1326cf225100",
+        "filename": "sustainability-initiatives-for-modern-businesses.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/14cc988e-cb2a-4766-70ec-1326cf225100/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:31:59.701643",
+        "metadata": {
+          "alt": "Sustainability Initiatives for Modern Businesses - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:blog-5",
+          "block": "BlogGrid01",
+          "type": "blog-5",
+          "folder": "pages",
+          "filename": "sustainability-initiatives-for-modern-businesses.jpg"
+        }
+      },
+      {
+        "id": "17976eeb-07de-4364-1616-7d35b3306000",
+        "filename": "sustainability-initiatives-for-modern-businesses.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/17976eeb-07de-4364-1616-7d35b3306000/public",
+        "category": "pages",
+        "uploaded_at": "2026-01-19T00:32:01.594010",
+        "metadata": {
+          "alt": "Sustainability Initiatives for Modern Businesses - business site",
+          "placeholder": "IMAGE_PLACEHOLDER:avatar-5",
+          "block": "BlogGrid01",
+          "type": "avatar-5",
+          "folder": "pages",
+          "filename": "sustainability-initiatives-for-modern-businesses.jpg"
+        }
+      }
+    ],
+    "blog": [
+      {
+        "id": "7474219b-225a-407f-66c8-359141245d00",
+        "filename": "author-avatar.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/7474219b-225a-407f-66c8-359141245d00/public",
+        "category": "blog",
+        "uploaded_at": "2026-01-19T00:32:14.814118",
+        "metadata": {
+          "type": "author",
+          "site": "business site",
+          "folder": "blog",
+          "filename": "author-avatar.jpg"
+        }
+      },
+      {
+        "id": "4aa2a054-b25f-4b5b-e78c-a4bffc20b700",
+        "filename": "5-essential-strategies-to-scale-your-startup-in-a-competitive-market.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/4aa2a054-b25f-4b5b-e78c-a4bffc20b700/public",
+        "category": "blog",
+        "uploaded_at": "2026-01-19T00:32:43.253335",
+        "metadata": {
+          "type": "article_cover",
+          "article": "5-essential-strategies-to-scale-your-startup-in-a-competitive-market",
+          "title": "5 Essential Strategies to Scale Your Startup in a Competitive Market",
+          "folder": "blog",
+          "filename": "5-essential-strategies-to-scale-your-startup-in-a-competitive-market.jpg"
+        }
+      },
+      {
+        "id": "1397d10e-66f9-4c25-e4bd-5518cf84e200",
+        "filename": "boost-your-business-essential-strategies-for-startup-success.jpg",
+        "url": "https://imagedelivery.net/W0Tyu0H3jD0178dqoxnJSA/1397d10e-66f9-4c25-e4bd-5518cf84e200/public",
+        "category": "blog",
+        "uploaded_at": "2026-01-19T00:32:48.890480",
+        "metadata": {
+          "type": "article_cover",
+          "article": "boost-your-business-essential-strategies-for-startup-success",
+          "title": "Boost Your Business: Essential Strategies for Startup Success",
+          "folder": "blog",
+          "filename": "boost-your-business-essential-strategies-for-startup-success.jpg"
+        }
+      }
+    ],
+    "logo": [],
+    "protected": [
+      "favicon.svg",
+      "favicon.ico",
+      "favicon-16x16.png",
+      "favicon-32x32.png",
+      "android-chrome-192x192.png",
+      "android-chrome-512x512.png",
+      "apple-touch-icon.png",
+      "icon-192x192.png",
+      "icon-512x512.png",
+      "site.webmanifest"
+    ]
+  }
+}
